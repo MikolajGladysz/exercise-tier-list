@@ -117,6 +117,10 @@ h1 {
   visibility: hidden !important;
   display: none !important;
 }
+/* active */
+.active {
+  opacity: 1 !important;
+}
 /* Fix margin */
 .no-margin {
   margin: 0 !important;
@@ -191,7 +195,7 @@ h1 {
   opacity: 1;
   cursor: pointer;
 }
-/*================= Bicpes ========================*/
+/*================= biceps ========================*/
 .biceps_male_hover {
   width: 7%;
   height: 9%;
@@ -202,7 +206,7 @@ h1 {
 .biceps_left {
   left: 30%;
 }
-.bicpes_right {
+.biceps_right {
   left: 62%;
 }
 .biceps_male_hover:hover ~ .biceps_male {

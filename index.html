@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer type="module" src="app.js"></script>
+    <title>My First Parcel App</title>
+  </head>
+  <body>
+    <header>
+      <div class="center flexBlock">
+        <a href="#"
+          ><div>
+            <span class="black200-txt logo-txt">Workout</span>
+            <span class="blue200-txt logo-txt">Tier List</span>
+          </div>
+        </a>
+        <div class="header-right">
+          <ul class="flexBlock black200-txt">
+            <li>
+              <a href="#"><span class="blue250-txt">All Exercises</span></a>
+            </li>
+            <li>
+              <a href="./about.html"> <span class="blue250-txt">About</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="center">
+      <section>
+        <h1 class="black300-txt section-title">Pick Muscle</h1>
+        <div class="flexBlock main-con">
+          <div class="flexBlock mscl-con">
+            <div class="mscl-front mscl-img">
+              <img src="./img/muscle/front/mscl-trans.png" alt="Human muscle" />
+              <!-- FRONT -->
+              <!-- Shoulders -->
+              <a href="#shoulders" class="shoulders_male_hover shoulder_left"
+                >shoulders
+              </a>
+              <a href="#shoulders" class="shoulders_male_hover shoulder_right"
+                >shoulders
+              </a>
+
+              <img
+                src="./img/muscle/front/shoulders.png"
+                alt="Shoulders"
+                class="muscle shoulders_male"
+              />
+              <!-- Traps -->
+              <a class="traps_male_hover trap_left" href="#traps">traps</a>
+              <a class="traps_male_hover trap_right" href="#traps">traps</a>
+              <img
+                src="./img/muscle/front/traps.png"
+                alt="Traps"
+                class="muscle traps_male"
+              />
+              <!-- Chest -->
+              <a class="chest_male_hover" href="#chest">chest</a>
+              <img
+                src="./img/muscle/front/chest.png"
+                alt="Chest"
+                class="muscle chest_male"
+              />
+              <!-- Bicpes -->
+              <a class="biceps_male_hover biceps_left" href="#biceps">biceps</a>
+              <a class="biceps_male_hover bicpes_right" href="#biceps"
+                >biceps</a
+              >
+              <img
+                src="./img/muscle/front/biceps.png"
+                alt="Bicpes"
+                class="muscle biceps_male"
+              />
+              <!-- Forearms -->
+              <a class="forearms_male_hover forearm_left" href="#forearms"
+                >forearms</a
+              >
+              <a class="forearms_male_hover forearm_right" href="#forearms"
+                >forearms</a
+              >
+              <img
+                src="./img/muscle/front/forearms.png"
+                alt="Forearms"
+                class="muscle forearms_male"
+              />
+              <!-- Oblique -->
+              <a class="oblique_male_hover oblique_left" href="#oblique"
+                >oblique</a
+              >
+              <a class="oblique_male_hover oblique_right" href="#oblique"
+                >oblique</a
+              >
+              <img
+                src="./img/muscle/front/oblique.png"
+                alt="Oblique"
+                class="muscle oblique_male"
+              />
+              <!-- ABS -->
+              <a class="abs_male_hover" href="#abs">abs</a>
+              <img
+                src="./img/muscle/front/abs.png"
+                alt="ABS"
+                class="muscle abs_male"
+              />
+              <!-- Quads -->
+              <a class="quads_male_hover" href="#quads">quads</a>
+              <img
+                src="./img/muscle/front/quads-front.png"
+                alt="Quads"
+                class="muscle quads_male"
+              />
+              <!-- Claves -->
+              <a class="claves_male_hover" href="#claves">claves</a>
+              <img
+                src="./img/muscle/front/claves.png"
+                alt="Claves"
+                class="muscle claves_male"
+              />
+            </div>
+
+            <div class="mscl-back mscl-img">
+              <img src="./img/muscle/back/mscl-trans.png" alt="Human muscle" />
+              <!-- BAK -->
+              <!-- Shoulders back -->
+              <a
+                class="shoulders_back_male_hover shoulder_back_left"
+                href="#shoulders"
+                >shoulders</a
+              >
+              <a
+                class="shoulders_back_male_hover shoulder_back_right"
+                href="#shoulders"
+                >shoulders</a
+              >
+              <img
+                src="./img/muscle/back/shoulders-back.png"
+                alt="Shoulders"
+                class="muscle shoulders_back_male"
+              />
+              <!-- Traps back -->
+              <a class="traps_back_male_hover" href="#traps">traps</a>
+              <img
+                src="./img/muscle/back/traps-back.png"
+                alt="Traps"
+                class="muscle traps_back_male"
+              />
+              <!-- Triceps -->
+              <a class="triceps_male_hover triceps_left" href="#triceps"
+                >triceps</a
+              >
+              <a class="triceps_male_hover triceps_right" href="#triceps"
+                >triceps</a
+              >
+              <img
+                src="./img/muscle/back/triceps.png"
+                alt="Triceps"
+                class="muscle triceps_male"
+              />
+              <!-- Lats back -->
+              <a class="lats_back_male_hover lats_back_left" href="#lats"
+                >lats</a
+              >
+              <a class="lats_back_male_hover lats_back_right" href="#lats"
+                >lats</a
+              >
+              <img
+                src="./img/muscle/back/lats.png"
+                alt="Lats"
+                class="muscle lats_back_male"
+              />
+              <!-- Forearms back -->
+              <a
+                class="forearms_back_male_hover forearms_back_left"
+                href="#forearms"
+                >forearms</a
+              >
+              <a
+                class="forearms_back_male_hover forearms_back_right"
+                href="#forearms"
+                >forearms</a
+              >
+              <img
+                src="./img/muscle/back/forearms-back.png"
+                alt="Forearms"
+                class="muscle forearms_back_male"
+              />
+              <!-- Glutes back -->
+              <a class="glutes_back_male_hover" href="#glutes">glutes</a>
+              <img
+                src="./img/muscle/back/glutes.png"
+                alt="Glutes"
+                class="muscle glutes_back_male"
+              />
+              <!-- Ham back -->
+              <a class="ham_back_male_hover" href="#ham">ham</a>
+              <img
+                src="./img/muscle/back/ham.png"
+                alt="Ham"
+                class="muscle ham_back_male"
+              />
+              <!-- Claves back -->
+              <a class="claves_back_male_hover" href="#claves">claves</a>
+              <img
+                src="./img/muscle/back/claves-back.png"
+                alt="Claves"
+                class="muscle claves_back_male"
+              />
+            </div>
+          </div>
+          <section class="mscl-prev hidden flexBlock">
+            <img src="./img/preview/biceps.jpg" alt="bicpes" />
+            <h2 class="prev-title">Biceps</h2>
+            <div class="accordion-content">
+              <h3>Muscle structure</h3>
+              <div class="expand hidden">XD</div>
+            </div>
+            <div class="accordion-content">
+              <h3>Function</h3>
+              <div class="expand">
+                <span
+                  >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nulla suscipit iusto incidunt harum sed veniam voluptates
+                  reiciendis sapiente nemo cupiditate?</span
+                >
+              </div>
+            </div>
+            <button class="tierlist-btn">Go to tier list!</button>
+          </section>
+          <div class="mscl-tier hidden">
+            <div class="tier-row flexBlock">
+              <span class="tier-letter">S</span>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+            </div>
+            <div class="tier-row flexBlock">
+              <span class="tier-letter">A</span>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+            </div>
+            <div class="tier-row flexBlock">
+              <span class="tier-letter">b</span>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+            </div>
+            <div class="tier-row flexBlock">
+              <span class="tier-letter">c</span>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+            </div>
+            <div class="tier-row flexBlock">
+              <span class="tier-letter">d</span>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+            </div>
+            <div class="tier-row flexBlock">
+              <span class="tier-letter">e</span>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/biceps_curl.jpg"
+                  alt="biceps curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Biceps Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+              <section class="tier-item">
+                <img
+                  src="./img/item_img/biceps/reverse_curl.jpg"
+                  alt="Reverse curl"
+                  class="item-img"
+                />
+                <h2 class="item-title">Reverse Curl</h2>
+              </section>
+            </div>
+            <div class="back">Back</div>
+          </div>
+        </div>
+      </section>
+      <div class="modal flexBlock hidden">
+        <section class="modal-con">
+          <h2 class="modal-title">Biceps Curl</h2>
+          <div class="flexBlock">
+            <img
+              src="./img/modal/biceps/biceps_curl.gif"
+              alt="biceps curl gif"
+              class="modal-img"
+            />
+            <section class="modal-content">
+              <div class="accordion-content">
+                <h3>Overview</h3>
+                <div class="expand modal-overview">
+                  <span>
+                    The biceps curl mainly targets the biceps brachii,
+                    brachialis and brachioradialis muscles. The biceps is
+                    stronger at elbow flexion when the forearm is supinated
+                    (palms turned upward) and weaker when the forearm is
+                    pronated. The brachioradialis is at its most effective when
+                    the palms are facing inward, and the brachialis is
+                    unaffected by forearm rotation. Therefore, the degree of
+                    forearm rotation affects the degree of muscle recruitment
+                    between the three muscles.</span
+                  >
+                </div>
+              </div>
+              <div class="accordion-content">
+                <h3>Variation</h3>
+                <div class="expand modal-variation flexBlock">
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                  <section class="tier-item">
+                    <img
+                      src="./img/item_img/biceps/biceps_curl.jpg"
+                      alt="biceps curl"
+                      class="item-img"
+                    />
+                    <h2 class="item-title">Biceps Curl</h2>
+                  </section>
+                </div>
+              </div>
+              <div class="modal-stats flexBlock">
+                <div>
+                  <h3>Difficulty</h3>
+                  <div class="stat-bar flexBlock">
+                    <span>Very low</span>
+                    <span>low</span>
+                    <span>moderate</span>
+                    <span>high</span>
+                    <span>very high</span>
+                  </div>
+                  <span>High</span>
+                </div>
+                <div>
+                  <h3>Isolation</h3>
+                  <div class="stat-bar flexBlock">
+                    <span>Very low</span>
+                    <span>low</span>
+                    <span>moderate</span>
+                    <span>high</span>
+                    <span>very high</span>
+                  </div>
+                  <span>low</span>
+                </div>
+                <div>
+                  <h3>Progression</h3>
+                  <div class="stat-bar flexBlock">
+                    <span>Very low</span>
+                    <span>low</span>
+                    <span>moderate</span>
+                    <span>high</span>
+                    <span>very high</span>
+                  </div>
+                  <span>moderate</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer_main">
+      <section class="footer_section">
+        <p class="footer_text">Check out my other projects.</p>
+        <p class="footer_text">
+          <a href="#">GitHub</a> | <a href="#">Project Website</a>
+        </p>
+      </section>
+      <section class="footer_section">
+        <p class="footer_text">Life's too short for bad exercises!</p>
+      </section>
+      <section class="footer_section">
+        <p class="footer_text footer_github"><i class="bx bxl-github"></i></p>
+      </section>
+    </footer>
+  </body>
+</html>

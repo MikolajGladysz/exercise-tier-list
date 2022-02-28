@@ -1,0 +1,762 @@
+/* GLOBAL */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  list-style-type: none;
+  /* border: solid black 1px; */
+}
+a > span,
+a {
+  transition: color 0.5s;
+}
+a:hover > span,
+a:hover {
+  color: var(--a-hover);
+}
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background-color: var(--main-background);
+}
+:root {
+  --blue100: #113f67;
+  --blue200: #38598b;
+  --blue250: #1f6cb0;
+  --blue300: #a2a8d3;
+  --blue400: #e7eaf6;
+
+  --black100: #2a2438;
+  --black200: #352f44;
+  --black300: #5c5470;
+  --black400: #dbd8e3;
+
+  --a-hover: #84e9ff;
+
+  --main-background: #fffdf6;
+
+  --s-tier: #e87f7f;
+  --a-tier: #e8a47f;
+  --b-tier: #fff768;
+  --c-tier: #b6ff7a;
+  --d-tier: #7fe0e8;
+  --e-tier: #676fff;
+}
+.black100-txt {
+  color: var(--black100);
+}
+.black200-txt {
+  color: var(--black200);
+}
+.black300-txt {
+  color: var(--black300);
+}
+.black400-txt {
+  color: var(--black400);
+}
+.blue100-txt {
+  color: var(--blue100);
+}
+.blue200-txt {
+  color: var(--blue200);
+}
+.blue250-txt {
+  color: var(--blue250);
+}
+.blue300-txt {
+  color: var(--blue300);
+}
+.blue400-txt {
+  color: var(--blue400);
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1152px;
+  padding: 0 20px;
+}
+.flexBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* HEADER */
+header {
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--blue400);
+  height: 60px;
+  z-index: 999;
+  border-bottom: 1px solid var(--blue200);
+}
+header > div {
+  height: 100%;
+}
+.logo-txt {
+  font-size: 2.5rem;
+}
+.header-right ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* MAIN */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 10px auto;
+}
+/* Hide invisible views */
+.hidden {
+  width: 0;
+  visibility: hidden !important;
+  display: none !important;
+}
+/* Fix margin */
+.no-margin {
+  margin: 0 !important;
+}
+.main-con {
+  width: 100%;
+}
+.mscl-con {
+  width: 100%;
+  margin: -75px 0 0 0;
+  justify-content: space-around;
+}
+.mscl-img {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.mscl-img > img {
+  width: 47vw;
+  max-width: 390px;
+}
+
+/* TEST */
+.shoulders_male_hover {
+  width: 12%;
+  height: 10%;
+  position: absolute;
+  top: 17%;
+  z-index: 200;
+}
+.shoulders_male_hover:hover ~ .shoulders_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.shoulder_left {
+  left: 32%;
+}
+.shoulder_right {
+  left: 56%;
+}
+/*================= Traps ========================*/
+.traps_male_hover {
+  width: 6%;
+  height: 4%;
+  position: absolute;
+  top: 15%;
+  z-index: 201;
+}
+.traps_male_hover:hover ~ .traps_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.trap_left {
+  left: 41%;
+}
+.trap_right {
+  left: 53%;
+}
+/*================= Chest ========================*/
+.chest_male_hover {
+  width: 24%;
+  height: 12%;
+  left: 38%;
+  position: absolute;
+  top: 20.5%;
+  z-index: 201;
+}
+.chest_male_hover:hover ~ .chest_male {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+}
+/*================= Bicpes ========================*/
+.biceps_male_hover {
+  width: 7%;
+  height: 9%;
+  position: absolute;
+  top: 26%;
+  z-index: 203;
+}
+.biceps_left {
+  left: 30%;
+}
+.bicpes_right {
+  left: 62%;
+}
+.biceps_male_hover:hover ~ .biceps_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*================= Forearms ========================*/
+.forearms_male_hover {
+  width: 12%;
+  height: 14%;
+  position: absolute;
+  top: 35%;
+  z-index: 203;
+}
+.forearm_left {
+  left: 23%;
+}
+.forearm_right {
+  left: 64%;
+}
+.forearms_male_hover:hover ~ .forearms_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*================= Oblique ========================*/
+.oblique_male_hover {
+  width: 5%;
+  height: 12%;
+  position: absolute;
+  top: 32%;
+  z-index: 203;
+}
+.oblique_left {
+  left: 39%;
+}
+.oblique_right {
+  left: 57%;
+}
+.oblique_male_hover:hover ~ .oblique_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*================= ABS ========================*/
+.abs_male_hover {
+  width: 13%;
+  height: 14%;
+  left: 44%;
+  position: absolute;
+  top: 33%;
+  z-index: 199;
+}
+.abs_male_hover:hover ~ .abs_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*================= Quads ========================*/
+.quads_male_hover {
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top: 48%;
+  left: 38%;
+  z-index: 203;
+}
+.quads_male_hover:hover ~ .quads_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*================= Claves ========================*/
+.claves_male_hover {
+  width: 24%;
+  height: 18%;
+  position: absolute;
+  top: 70%;
+  left: 38%;
+  z-index: 203;
+}
+.claves_male_hover:hover ~ .claves_male {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*=================== Back ===================*/
+/*=================== Shoulders Back ===================*/
+.shoulders_back_male_hover {
+  width: 11%;
+  height: 10%;
+  position: absolute;
+  top: 21%;
+  z-index: 200;
+}
+.shoulders_back_male_hover:hover ~ .shoulders_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.shoulder_back_left {
+  left: 37%;
+}
+.shoulder_back_right {
+  left: 60%;
+}
+/*=================== Traps Back ===================*/
+.traps_back_male_hover {
+  width: 26%;
+  height: 22%;
+  left: 41%;
+  position: absolute;
+  top: 13%;
+  z-index: 196;
+}
+.traps_back_male_hover:hover ~ .traps_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*=================== Triceps ===================*/
+.triceps_male_hover {
+  width: 7%;
+  height: 10%;
+  position: absolute;
+  top: 30%;
+  z-index: 202;
+}
+.triceps_male_hover:hover ~ .triceps_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.triceps_left {
+  left: 36%;
+}
+.triceps_right {
+  left: 62%;
+  width: 8%;
+}
+/*=================== Lats Back ===================*/
+.lats_back_male_hover {
+  width: 11%;
+  height: 12%;
+  position: absolute;
+  top: 31%;
+  z-index: 200;
+}
+.lats_back_male_hover:hover ~ .lats_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.lats_back_left {
+  left: 42%;
+}
+.lats_back_right {
+  left: 54%;
+}
+/*=================== Forearms Back ===================*/
+.forearms_back_male_hover {
+  width: 11%;
+  height: 14%;
+  position: absolute;
+  top: 40%;
+  z-index: 204;
+}
+.forearms_back_male_hover:hover ~ .forearms_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.forearms_back_left {
+  left: 31%;
+}
+.forearms_back_right {
+  left: 65%;
+  width: 11%;
+}
+/*=================== Glutes Back ===================*/
+.glutes_back_male_hover {
+  width: 23%;
+  height: 11%;
+  left: 42%;
+  position: absolute;
+  top: 43%;
+  z-index: 200;
+}
+.glutes_back_male_hover:hover ~ .glutes_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*=================== Ham Back ===================*/
+.ham_back_male_hover {
+  width: 21%;
+  height: 12%;
+  left: 43%;
+  position: absolute;
+  top: 54%;
+  z-index: 200;
+}
+.ham_back_male_hover:hover ~ .ham_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+/*=================== Claves Back ===================*/
+.claves_back_male_hover {
+  width: 19%;
+  height: 25%;
+  left: 44%;
+  position: absolute;
+  top: 66%;
+  z-index: 200;
+}
+.claves_back_male_hover:hover ~ .claves_back_male {
+  opacity: 1;
+  cursor: pointer;
+}
+.muscle {
+  position: absolute;
+  width: 100%;
+
+  opacity: 0.1;
+  transition: opacity 0.4s;
+}
+.mscl-img > a {
+  font-size: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+/*=================== Footer ===================*/
+.footer_main {
+  width: 100%;
+  border-top: 1px solid #22345d;
+  background-color: #4661a0;
+  flex-shrink: 0;
+  color: white;
+  display: grid;
+  row-gap: 4rem;
+}
+.footer_section {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-self: center;
+  align-self: center;
+}
+.footer_text {
+  line-height: 1.4;
+  font-size: 20px;
+}
+.footer_text a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer_github {
+  font-size: 71px;
+  text-align: right;
+}
+@media only screen and (min-width: 740px) {
+  .footer_main {
+    grid-template-columns: 300px auto 300px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer_section {
+    justify-self: center;
+  }
+  .footer_github {
+    text-align: center;
+  }
+  .footer_main {
+    row-gap: 0px;
+  }
+}
+
+/* media queries */
+@media only screen and (max-width: 660px) {
+  .mscl-con {
+    margin: -30px 0 0 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .logo-txt {
+    font-size: 2rem;
+  }
+}
+/* mucle preview window */
+.mscl-prev {
+  width: 100%;
+  max-width: 50vw;
+  border: solid 2px var(--black100);
+  border-radius: 10px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+.mscl-prev > img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.accordion-content {
+  width: 100%;
+  padding: 0 1vw;
+}
+.accordion-content h3 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--black300);
+  margin-top: 11px;
+  cursor: pointer;
+  color: var(--black300);
+  position: relative;
+}
+.accordion-content h3::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-bottom: solid 3px var(--black300);
+  position: absolute;
+  right: 13px;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+  top: 2px;
+  border-right: solid 3px var(--black300);
+}
+.accordion-content:hover h3::after {
+  transform: rotate(-45deg);
+}
+
+.accordion-content .expand {
+  margin-top: 10px;
+  overflow-y: hidden;
+  padding-bottom: 25px;
+}
+.mscl-prev .tierlist-btn {
+  border: solid 3px var(--blue200);
+  transition: all 0.5s;
+  background: none;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--blue200);
+  padding: 5px 20px;
+}
+.mscl-prev .tierlist-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--blue400);
+}
+@media only screen and (max-width: 590px) {
+  .mscl-prev .accordion-content h3 {
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+}
+/* Tier list */
+.mscl-tier {
+  border: solid 3px var(--black300);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+}
+.tier-row {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tier-row + .tier-row {
+  border-top: 2px var(--black200) solid;
+}
+.tier-row > * {
+  flex-basis: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-bottom: 2px var(--black200) solid;
+  border-right: 2px var(--black200) solid;
+}
+.tier-letter {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.tier-row:nth-child(1) .tier-letter {
+  background-color: var(--s-tier);
+}
+.tier-row:nth-child(2) .tier-letter {
+  background-color: var(--a-tier);
+}
+.tier-row:nth-child(3) .tier-letter {
+  background-color: var(--b-tier);
+}
+.tier-row:nth-child(4) .tier-letter {
+  background-color: var(--c-tier);
+}
+.tier-row:nth-child(5) .tier-letter {
+  background-color: var(--d-tier);
+}
+.tier-row:nth-child(6) .tier-letter {
+  background-color: var(--e-tier);
+}
+.item-img {
+  height: 80%;
+}
+.tier-item {
+  text-align: center;
+}
+.item-title {
+  font-size: 1rem;
+}
+/* MODAL */
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.modal-img {
+  width: 30%;
+}
+
+.modal-con {
+  border-top: 8px solid var(--s-tier);
+  width: 80%;
+  position: relative;
+  height: 80%;
+  z-index: 10;
+  background-color: white;
+  padding: 20px;
+}
+.modal-con::after {
+  content: "S";
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  color: var(--main-background);
+  top: -45px;
+  font-size: 3rem;
+  font-weight: 100;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--s-tier);
+}
+.modal-title {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 2rem;
+  max-height: 10%;
+}
+
+.modal-con .tier-item {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+.modal-content {
+  max-width: 70%;
+  overflow: auto;
+  max-height: 65vh;
+}
+.modal-con > div {
+  align-items: flex-start;
+  max-height: 90%;
+  overflow: hidden;
+}
+.modal-stats {
+  padding: 20px;
+}
+.modal-stats > div {
+  width: 100%;
+  padding: 0 5px;
+}
+.modal-stats h3 {
+  text-align: center;
+}
+.modal-stats .stat-bar {
+  width: 100%;
+  border: solid 2px var(--black300);
+  border-radius: 10px;
+  font-size: 1px;
+  height: 40px;
+  overflow: hidden;
+}
+.modal-stats .stat-bar span {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid var(--black300);
+}
+.modal-stats .stat-bar span:nth-child(1) {
+  background-color: var(--d-tier);
+}
+.modal-stats .stat-bar span:nth-child(2) {
+  background-color: var(--c-tier);
+}
+.modal-stats .stat-bar span:nth-child(3) {
+  background-color: var(--b-tier);
+}
+.modal-stats .stat-bar span:nth-child(4) {
+  background-color: var(--a-tier);
+}
+.modal-stats .stat-bar span:nth-child(5) {
+  background-color: var(--s-tier);
+  border-right: none;
+}
+.back {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  border-left: solid var(--black300) 5px;
+  border-top: solid var(--black300) 5px;
+  transform: rotate(-45deg);
+  font-size: 0;
+  cursor: pointer;
+  transition: border 0.7s;
+}
+.back:hover {
+  border-left: solid var(--black100) 5px;
+  border-top: solid var(--black100) 5px;
+}
+
+@media only screen and (max-width: 740px) {
+  .modal-con > div {
+    display: block;
+    text-align: center;
+    overflow: auto;
+    max-height: 85%;
+  }
+  .modal-img {
+    width: 70%;
+  }
+  .modal-content {
+    max-width: 100%;
+    overflow: initial;
+  }
+  .modal-con {
+    padding: 0;
+  }
+  .modal-title {
+    margin-bottom: 0;
+    line-height: 3rem;
+    border-bottom: solid 2px var(--black300);
+  }
+}
+.about h2 {
+  font-size: 2rem;
+  margin: 20px;
+  color: var(--black100);
+}
+.about > section {
+  height: 100vh;
+}

@@ -1,0 +1,16 @@
+{
+  "muscles": [
+    {
+      "name": "traps",
+      "imgUrl": "img",
+      "structure": "mock",
+      "function": "function"
+    },
+    {
+      "name": "biceps",
+      "imgUrl": "imgbiceps",
+      "structure": "mockbiceps",
+      "function": "functionbiceps"
+    }
+  ]
+}

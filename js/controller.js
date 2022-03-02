@@ -7,7 +7,13 @@ const controlMuscles = function () {
   if (!id) return;
 
   //   muscleView.highlightMuscle(id);
-  muscleView.highlightMuscle(id);
+  muscleView.init(id);
+
+  console.log(id);
+  if (id !== "") {
+    muscleView.showPreview(true);
+    muscleView.render("XDDD");
+  } else muscleView.showPreview(false);
 };
 
 const init = function () {

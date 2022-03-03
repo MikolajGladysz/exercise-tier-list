@@ -11,15 +11,14 @@ class MuscleView extends View {
   _id = "";
 
   _highlightMuscle() {
+    //0) check if there is no id and muscle front and back should be rendered
     if (this._id === "") {
       this._muscleFrontImg.classList.remove("hidden");
       this._muscleBackImg.classList.remove("hidden");
     }
 
-    // 1) Get all muscle images
+    // 1) Get all muscle part
     const collection = document.querySelectorAll(".muscle");
-
-    //
 
     // 2) Check which muscle matech hash and setting it to active
     collection.forEach((el) => {
@@ -29,20 +28,7 @@ class MuscleView extends View {
       }
     });
   }
-  init(id) {
-    this._id = id;
 
-    this._highlightMuscle();
-    this._hideMuscleParts();
-
-    document.body.addEventListener("click", this._resetView.bind(this));
-  }
-
-  addHandler(handler) {
-    // document.body.addEventListener("click", handler)
-    window.addEventListener("load", handler);
-    window.addEventListener("hashchange", handler);
-  }
   _resetView(e) {
     if (!e) return;
     const musclePart = e.target.closest(".mscl-img > a")?.parentElement;
@@ -57,16 +43,17 @@ class MuscleView extends View {
     }
   }
   _hideMuscleParts() {
-    const muscleBack = [
-      "shoulders",
-      "traps",
-      "triceps",
-      "lats",
-      "forearms",
-      "glutes",
-      "ham",
-      "claves",
-    ];
+    //decide if id matches front muscle group to determine with side should be rendered
+    // const muscleBack = [
+    //   "shoulders",
+    //   "traps",
+    //   "triceps",
+    //   "lats",
+    //   "forearms",
+    //   "glutes",
+    //   "ham",
+    //   "claves",
+    // ];
     const muscleFront = [
       "shoulders",
       "traps",
@@ -83,6 +70,7 @@ class MuscleView extends View {
       this._muscleBackImg.classList.add("hidden");
     else this._muscleFrontImg.classList.add("hidden");
   }
+
   _generateMarkup() {
     return `
         <img src="./img/preview/biceps.jpg" alt="biceps" />
@@ -104,7 +92,24 @@ class MuscleView extends View {
             <button class="tierlist-btn">Go to tier list!</button>
         `;
   }
+
+  init(id) {
+    //initialization
+    this._id = id;
+
+    this._highlightMuscle();
+    this._hideMuscleParts();
+
+    document.body.addEventListener("click", this._resetView.bind(this));
+  }
+
+  addHandler(handler) {
+    window.addEventListener("load", handler);
+    window.addEventListener("hashchange", handler);
+  }
+
   showPreview(isHash = true) {
+    //show muscle preview window
     if (isHash) this._parentElement.classList.remove("hidden");
     else this._parentElement.classList.add("hidden");
   }

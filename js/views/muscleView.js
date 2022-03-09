@@ -10,6 +10,17 @@ class MuscleView extends View {
   _sectionTitle = document.querySelector(".section-title");
   _id = "";
 
+  hideView() {
+    this._parentElement.classList.add("hidden");
+    document.querySelector(".mscl-con").classList.add("hidden");
+    this._sectionTitle.classList.add("hidden");
+  }
+  goToTierList() {
+    const btn = this._parentElement.querySelector(".tierlist-btn");
+    btn.addEventListener("click", () => {
+      window.location.hash = this._data.name.toLowerCase() + "/tierlist";
+    });
+  }
   _highlightMuscle() {
     //0) check if there is no id and muscle front and back should be rendered
     if (this._id === "") {
@@ -40,6 +51,7 @@ class MuscleView extends View {
     ) {
       window.location.hash = "";
       this._id = "";
+      console.log("HERE");
       this._sectionTitle.classList.remove("hidden");
 
       this._parentElement.classList.add("hidden");
@@ -70,7 +82,7 @@ class MuscleView extends View {
     //   "forearms",
     //   "glutes",
     //   "ham",
-    //   "claves",
+    //   "calves",
     // ];
     const muscleFront = [
       "shoulders",
@@ -81,7 +93,7 @@ class MuscleView extends View {
       "oblique",
       "abs",
       "quadriceps",
-      "claves",
+      "calves",
     ];
 
     //0)reset muscle visibility
@@ -122,8 +134,10 @@ class MuscleView extends View {
     //initialization
     this._id = id;
 
+    document.querySelector(".mscl-con").classList.remove("hidden");
     this._highlightMuscle();
     this._hideMuscleParts();
+    // .addEventListener("click", this._goToTierList);
     // const accord = document.querySelector(".mscl-prev .accordion-content h3");
     // accord.addEventListener("click", (e) => {
     //   console.log(e);

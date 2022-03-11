@@ -3,35 +3,41 @@ import * as model from "./model.js";
 import muscleView from "./views/muscleView.js";
 import tierListView from "./views/tierListView.js";
 
-const controlMuscles = async function () {
-  const id = window.location.hash.slice(1).split("/")[0];
-  if (!id) return;
-  if (window.location.hash.slice(1).split("/")[1] !== "tierlist") {
-    tierListView.hideView();
+const controlViews = async function () {
+  // 0) getting id from hash. Id is an array with first part, that is muscle name and other, that is tierlist
+  const id = window.location.hash.slice(1).split("/");
 
-    //0) initialization of muscle view
-    muscleView.init(id);
+  //1)reseting view
+  tierListView.hideView();
 
-    //1) check if muscle preview window should be rendered or not
-    if (id !== "") {
-      muscleView.showPreview(true);
-      await model.loadMuscle(id);
-      muscleView.render(model.state.muscle);
-    } else muscleView.showPreview(false);
+  //Whole app view depends on hash. For now there are 3 possibilities:
 
-    muscleView.goToTierList();
+  //2.1) there is no hash, muscle front and back image should be displayed
+  if (id[0] === "") {
+    muscleView.showMuscleImage();
+    muscleView.hidePreview();
   }
-  if (window.location.hash.slice(1).split("/")[1] === "tierlist") {
-    tierListView.init();
+  //2.2) Hash is only one element array, that means preview window should be displayed
+  else if (id.length === 1) {
+    await model.loadMuscle(id[0]);
+    muscleView.render(model.state.muscle);
+
+    muscleView.init(id[0]);
+    muscleView.showPreview();
+  }
+  //2.3) Hash is [muscle name]/ tierlist, that means user clicked on 'go to tier list' button, and such tierlist should be displayed
+  else if (id.length === 2) {
     muscleView.hideView();
+    await model.loadExercises(id);
+    tierListView.render(model.state.exercises);
+
+    tierListView.init();
   }
-};
-const controlViews = function () {
-  console.log(window.location.hash);
 };
 
 const init = function () {
+  //Changing hash and loading page are only cases, when something on page should change
   window.addEventListener("hashchange", controlViews);
-  muscleView.addHandler(controlMuscles);
+  window.addEventListener("load", controlViews);
 };
 init();

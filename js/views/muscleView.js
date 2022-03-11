@@ -9,28 +9,23 @@ class MuscleView extends View {
   _muscleBackImg = document.querySelector(".mscl-back");
   _sectionTitle = document.querySelector(".section-title");
   _id = "";
+  _listener = false;
 
   hideView() {
     this._parentElement.classList.add("hidden");
     document.querySelector(".mscl-con").classList.add("hidden");
     this._sectionTitle.classList.add("hidden");
+    // document.body.removeEventListener("click", this._resetView, false);
+    // console.log("removed");
   }
-  goToTierList() {
-    const btn = this._parentElement.querySelector(".tierlist-btn");
-    btn.addEventListener("click", () => {
-      window.location.hash = this._data.name.toLowerCase() + "/tierlist";
-    });
+  hidePreview() {
+    this._parentElement.classList.add("hidden");
+    this._highlightMuscle();
   }
   _highlightMuscle() {
-    //0) check if there is no id and muscle front and back should be rendered
-    if (this._id === "") {
-      this._muscleFrontImg.classList.remove("hidden");
-      this._muscleBackImg.classList.remove("hidden");
-    }
-
     // 1) Get all muscle part
     const collection = document.querySelectorAll(".muscle");
-
+    this._id = window.location.hash.slice(1).split("/")[0];
     // 2) Check which muscle matech hash and setting it to active
     collection.forEach((el) => {
       el.classList.remove("active");
@@ -42,20 +37,15 @@ class MuscleView extends View {
 
   _resetView(e) {
     if (!e) return;
+    if (window.location.hash.slice(1).split("/").length === 2) return;
     const musclePart = e.target.closest(".mscl-img > a")?.parentElement;
-
     // 0) check if click is outside of image, to reset view
     if (
       e.target.parentElement !== musclePart &&
       !e.target.closest(".mscl-prev")
     ) {
+      //1) to reset view simpy change hash to empty
       window.location.hash = "";
-      this._id = "";
-      console.log("HERE");
-      this._sectionTitle.classList.remove("hidden");
-
-      this._parentElement.classList.add("hidden");
-      this._highlightMuscle();
     }
   }
   _triggerAccordion(e) {
@@ -132,34 +122,38 @@ class MuscleView extends View {
 
   init(id) {
     //initialization
+    this._listener = false;
+
     this._id = id;
-
-    document.querySelector(".mscl-con").classList.remove("hidden");
-    this._highlightMuscle();
     this._hideMuscleParts();
-    // .addEventListener("click", this._goToTierList);
-    // const accord = document.querySelector(".mscl-prev .accordion-content h3");
-    // accord.addEventListener("click", (e) => {
-    //   console.log(e);
-    // });
-    this._parentElement.addEventListener("click", this._triggerAccordion);
-    document.body.addEventListener("click", this._resetView.bind(this));
-  }
+    this._highlightMuscle();
 
-  addHandler(handler) {
-    window.addEventListener("load", handler);
-    window.addEventListener("hashchange", handler);
-  }
+    //checking if listener is added to avoid couple listeners
+    if (!this._listener) {
+      this._parentElement.addEventListener("click", this._triggerAccordion);
+      document.body.addEventListener("click", this._resetView, false);
+      this._listener = true;
 
-  showPreview(isHash = true) {
-    //show muscle preview window
-    if (isHash) {
-      this._sectionTitle.classList.add("hidden");
-      this._parentElement.classList.remove("hidden");
-    } else {
-      this._sectionTitle.classList.remove("hidden");
-      this._parentElement.classList.add("hidden");
+      //handle clicking on 'go to tierlist" button
+      const btn = this._parentElement.querySelector(".tierlist-btn");
+      btn.addEventListener("click", () => {
+        window.location.hash = this._data.name.toLowerCase() + "/tierlist";
+      });
     }
+  }
+
+  showPreview() {
+    //show muscle preview window
+    this._sectionTitle.classList.add("hidden");
+    this._parentElement.classList.remove("hidden");
+    document.querySelector(".mscl-con").classList.remove("hidden");
+  }
+  showMuscleImage() {
+    //show muscle front, muscle back and .mscl-con container
+    document.querySelector(".mscl-con").classList.remove("hidden");
+
+    this._muscleBackImg.classList.remove("hidden");
+    this._muscleFrontImg.classList.remove("hidden");
   }
 }
 export default new MuscleView();

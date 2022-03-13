@@ -2,22 +2,23 @@
   "name": "Overhand pull up",
   "muscles": {
     "lats": {
-      "tier": "S",
+      "tier": "0",
       "points": "8"
     },
     "biceps": {
-      "tier": "A",
+      "tier": "1",
       "points": "3"
     },
     "abs": {
-      "tier": "C",
+      "tier": "3",
       "points": "3"
     }
   },
-  "difficulty": "4",
-  "isolation": "2",
-  "progression": "4",
+  "difficulty": "3",
+  "isolation": "3",
+  "progression": "3",
   "overview": "Lorum Ipsum 1900",
-  "variations": ["chinup", "one-hand-chinup"],
-  "imgUrl": "url"
+  "variations": ["chin-up", "one-hand-chinup"],
+  "imgUrl": "url",
+  "id": "pull-up"
 }

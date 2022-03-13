@@ -1,13 +1,13 @@
 {
-  "name": "OverhandXSDDDDDDDDDDDDDDD pull up",
+  "name": "test222 pull up",
   "muscles": {
     "lats": {
-      "tier": "0",
-      "points": "8"
+      "tier": "2",
+      "points": "3"
     },
     "biceps": {
       "tier": "2",
-      "points": "8"
+      "points": "2"
     },
     "abs": {
       "tier": "3",
@@ -15,10 +15,10 @@
     }
   },
   "difficulty": "3",
-  "isolation": "4",
-  "progression": "1",
+  "isolation": "2",
+  "progression": "4",
   "overview": "Lorum Ipsum 21900",
-  "variations": ["pull-up", "one-hand-chinup"],
+  "variations": ["test3", "one-hand-chinup", "test1"],
   "imgUrl": "u2rl",
-  "id": "chin-up"
+  "id": "test2"
 }

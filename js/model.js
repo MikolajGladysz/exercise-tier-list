@@ -54,6 +54,7 @@ const createExerciseObject = function (data) {
       variations: data[i].variations,
       tier: muscleInfo.tier,
       points: muscleInfo.points,
+      id: data[i].id,
     });
   }
 

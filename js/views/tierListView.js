@@ -5,12 +5,8 @@ class TierListView extends View {
   _errorMessage = "Could not load an image";
   _message = "";
 
-  _muscleFrontImg = document.querySelector(".mscl-front");
-  _muscleBackImg = document.querySelector(".mscl-back");
-  _sectionTitle = document.querySelector(".section-title");
-  _id = "";
-
   _generateMarkup() {
+    //Empty tier list table
     return `
     <div id="sTier" class="tier-row flexBlock">
       <span class="tier-letter">S</span>
@@ -32,34 +28,136 @@ class TierListView extends View {
     </div>
     <div class="back">Back</div>`;
   }
+  _generateItemMarkup(item) {
+    //Markup for preview of exercise (image and title). Used in tier lis and modal vidow in variations section
+    return `<section class="tier-item" data-id="${item.id}">
+    <img
+      src="./img/item_img/biceps/biceps_curl.jpg"
+      alt="biceps curl"
+      class="item-img"
+    />
+    <h2 class="item-title">${item.name}</h2>
+  </section>`;
+  }
+  _generateStatBarMarkup(val) {
+    //Markup for stat bar at the bottom of modal
+    let markup = `<div class="stat-bar flexBlock">`;
+    for (let i = 1; i < 6; i++) {
+      //difficulty ranges from 1 to 5. Stat bar is divided into 5 parts, this function sets opacity to 0, according to input value
+      markup += `<span style='opacity:${i > val ? 0 : 1}'>Level: ${i}</span>`;
+    }
+    markup += `</div><span>${
+      ["Very low", "Low", "Moderate", "High", "Very High"][val - 1]
+    }</span>`;
+
+    return markup;
+  }
+  _generateModalMarkup(item) {
+    //Modal window markup
+    console.log(item);
+    console.log(this._data);
+
+    //0) before generating modal itself, first create varation items preview, that gona be displayed in variation section
+    const variations = item.variations
+      .map((el) => this._data.find((e) => e.id === el))
+      .filter((n) => n);
+
+    //0.1) map every item.variation entry,
+    //0.2) search _data for exercise, where id mathes item.variation element
+    //0.3) filter answer, to clear array out of empty elements
+    let variationMarkup = "";
+
+    variations.forEach((e) => {
+      variationMarkup += this._generateItemMarkup(e);
+    });
+
+    const markup = `<section class="modal-con">
+    <h2 class="modal-title">${item.name}</h2>
+    <div class="flexBlock">
+      <img
+        src="./img/modal/biceps/biceps_curl.gif"
+        alt="biceps curl gif"
+        class="modal-img"
+      />
+      <section class="modal-content">
+        <div class="accordion-content">
+          <h3>Overview</h3>
+          <div class="expand modal-overview">
+            <span>
+              ${item.overview}  
+            </span
+            >
+          </div>
+        </div>
+        <div class="accordion-content">
+          <h3>Variation</h3>
+          <div class="expand modal-variation flexBlock">
+           ${variationMarkup}
+          </div>
+        </div>
+        <div class="modal-stats flexBlock">
+          <div>
+            <h3>Difficulty</h3>
+   ${this._generateStatBarMarkup(item.difficulty)}
+          </div>
+          <div>
+            <h3>Isolation</h3>
+   ${this._generateStatBarMarkup(item.isolation)}
+          </div>
+          <div>
+            <h3>Progression</h3>
+   ${this._generateStatBarMarkup(item.progression)}
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>`;
+
+    const modal = document.querySelector(".modal");
+    modal.classList.remove("hidden");
+    modal.insertAdjacentHTML("afterbegin", markup);
+  }
 
   _populateTierList() {
-    const sTier = document.querySelector("#sTier");
-    const aTier = document.querySelector("#aTier");
-    const bTier = document.querySelector("#bTier");
-    const cTier = document.querySelector("#cTier");
-    const dTier = document.querySelector("#dTier");
-    const eTier = document.querySelector("#eTier");
+    //Add items to tierlist, in appropiate positions
 
-    sTier.insertAdjacentHTML("beforeend", `<span>DUPA</span>`);
-    sTier.insertAdjacentHTML("beforeend", `<span>DUPA</span>`);
-    sTier.insertAdjacentHTML("beforeend", `<span>DUPA</span>`);
-    sTier.insertAdjacentHTML("beforeend", `<span>DUPA</span>`);
-
+    //0) get all rows of table
+    const tierRows = document.querySelectorAll(".tier-row");
     this._data.forEach((el) => {
-      console.log(el);
-      console.log(el.tier);
+      //1) generate markup and inset it in every row
+      tierRows[el.tier].insertAdjacentHTML(
+        "beforeend",
+        this._generateItemMarkup(el)
+      );
     });
   }
 
   hideView() {
     this._parentElement.classList.add("hidden");
   }
+  _showModal(e) {
+    // document.querySelector(".modal").classList.remove("hidden");
+
+    //0) see if clicked target is .tier-item. If no, return
+    if (!e.target.closest(".tier-item")) return;
+
+    //1) get dataset value of clicked element
+    const dataSet = e.target.closest(".tier-item").dataset.id;
+
+    // Search for exercise in this._data, where id matches dataset
+    const exercise = this._data.find((el) => el.id === dataSet);
+
+    this._generateModalMarkup(exercise);
+  }
 
   init() {
+    //show view
     this._parentElement.classList.remove("hidden");
 
     this._populateTierList();
+
+    this._parentElement.addEventListener("click", this._showModal.bind(this));
+    // console.log(tierItems);
   }
 }
 export default new TierListView();

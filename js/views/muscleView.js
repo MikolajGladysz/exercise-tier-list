@@ -48,21 +48,7 @@ class MuscleView extends View {
       window.location.hash = "";
     }
   }
-  _triggerAccordion(e) {
-    const accordions = Array.from(
-      document.querySelectorAll(".mscl-prev .accordion-content h3")
-    );
 
-    //0)Check if click is inside any accordion. If so, toggle 'colapse' class to content and 'active' class to arrow
-    if (accordions.some((val) => val === e.target)) {
-      const content = e.target.closest(".accordion-content").children[1];
-      content.classList.toggle("colapse");
-
-      e.target
-        .closest(".accordion-content")
-        .children[0].children[0].classList.toggle("active");
-    }
-  }
   _hideMuscleParts() {
     // const muscleBack = [
     //   "shoulders",
@@ -104,16 +90,19 @@ class MuscleView extends View {
             <h2 class="prev-title">${
               this._data.name[0].toUpperCase() + this._data.name.slice(1)
             }</h2>
-            <div class="accordion-content">
-              <h3>Muscle structure  <span class="arrow active">arrow</span></h3>
-              <div class="expand"><span>${this._data.structure}</span></div>
-            </div>
-            <div class="accordion-content">
-              <h3>Function  <span class="arrow">arrow</span></h3>
-              <div class="expand colapse">
-                <span
-                  >${this._data.function}</span
-                >
+            
+            <div class="accordion">
+              <div class="content-box">
+                <div class="label"> Muscle Structure</div>
+                <div class="content">
+                  <span>${this._data.structure}</span>
+                </div>
+              </div>
+              <div class="content-box">
+                <div class="label"> Function</div>
+                <div class="content">
+                  <span>${this._data.function}</span>
+                </div>
               </div>
             </div>
             <button class="tierlist-btn">Go to tier list!</button>

@@ -5,6 +5,9 @@ class TierListView extends View {
   _errorMessage = "Could not load an image";
   _message = "";
 
+  _clearModal() {
+    document.querySelector(".modal").innerHTML = "";
+  }
   _generateMarkup() {
     //Empty tier list table
     return `
@@ -26,7 +29,7 @@ class TierListView extends View {
     <div  id="eTier" class="tier-row flexBlock">
       <span class="tier-letter">e</span> 
     </div>
-    <div class="back">Back</div>`;
+   <a href="#"><div class="back">Back</div></a>`;
   }
   _generateItemMarkup(item) {
     //Markup for preview of exercise (image and title). Used in tier lis and modal vidow in variations section
@@ -54,8 +57,8 @@ class TierListView extends View {
   }
   _generateModalMarkup(item) {
     //Modal window markup
-    console.log(item);
-    console.log(this._data);
+
+    this._clearModal();
 
     //0) before generating modal itself, first create varation items preview, that gona be displayed in variation section
     const variations = item.variations
@@ -71,7 +74,10 @@ class TierListView extends View {
       variationMarkup += this._generateItemMarkup(e);
     });
 
-    const markup = `<section class="modal-con">
+    const tierLetter = ["s", "a", "b", "c", "d", "e"][item.tier];
+
+    const markup = `<section class="modal-con" style="border-top: 8px solid var(--${tierLetter}-tier);">
+    <span class="top-letter" style="background:var(--${tierLetter}-tier);">${tierLetter.toUpperCase()}</span>
     <h2 class="modal-title">${item.name}</h2>
     <div class="flexBlock">
       <img
@@ -80,35 +86,45 @@ class TierListView extends View {
         class="modal-img"
       />
       <section class="modal-content">
-        <div class="accordion-content">
-          <h3>Overview</h3>
-          <div class="expand modal-overview">
+        <div class="accordion">
+          <div class="content-box">
+            <div class="label"> Overview</div>
+            <div class="content">
             <span>
-              ${item.overview}  
-            </span
-            >
+            ${item.overview}  
+          </span>
+            </div>
+          </div>
+          <div class="content-box">
+            <div class="label"> Variation</div>
+            <div class="content">
+            <div class="modal-variation flexBlock">
+            ${variationMarkup}
+            </div>
+            </div>
+          </div>
+          <div class="content-box">
+            <div class="label"> Exercise Statistics</div>
+            <div class="content">
+            <div class="modal-stats flexBlock">
+            <div>
+              <h3>Difficulty</h3>
+     ${this._generateStatBarMarkup(item.difficulty)}
+            </div>
+            <div>
+              <h3>Isolation</h3>
+     ${this._generateStatBarMarkup(item.isolation)}
+            </div>
+            <div>
+              <h3>Progression</h3>
+     ${this._generateStatBarMarkup(item.progression)}
+            </div>
+          </div>
+            </div>
           </div>
         </div>
-        <div class="accordion-content">
-          <h3>Variation</h3>
-          <div class="expand modal-variation flexBlock">
-           ${variationMarkup}
-          </div>
-        </div>
-        <div class="modal-stats flexBlock">
-          <div>
-            <h3>Difficulty</h3>
-   ${this._generateStatBarMarkup(item.difficulty)}
-          </div>
-          <div>
-            <h3>Isolation</h3>
-   ${this._generateStatBarMarkup(item.isolation)}
-          </div>
-          <div>
-            <h3>Progression</h3>
-   ${this._generateStatBarMarkup(item.progression)}
-          </div>
-        </div>
+        
+        
       </section>
     </div>
   </section>`;
@@ -135,6 +151,10 @@ class TierListView extends View {
   hideView() {
     this._parentElement.classList.add("hidden");
   }
+  _hideModal(e) {
+    if (e.target.closest(".modal-con")) return;
+    this.classList.add("hidden");
+  }
   _showModal(e) {
     // document.querySelector(".modal").classList.remove("hidden");
 
@@ -148,6 +168,16 @@ class TierListView extends View {
     const exercise = this._data.find((el) => el.id === dataSet);
 
     this._generateModalMarkup(exercise);
+    Array.from(document.querySelectorAll(".modal-con .tier-item")).forEach(
+      (el) => {
+        el.addEventListener("click", this._showModal.bind(this));
+      }
+    );
+
+    document
+      .querySelector(".modal")
+      .addEventListener("click", this._triggerAccordion);
+    document.querySelector(".modal").addEventListener("click", this._hideModal);
   }
 
   init() {
@@ -157,6 +187,7 @@ class TierListView extends View {
     this._populateTierList();
 
     this._parentElement.addEventListener("click", this._showModal.bind(this));
+
     // console.log(tierItems);
   }
 }

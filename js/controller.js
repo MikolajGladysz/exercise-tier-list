@@ -19,6 +19,7 @@ const controlViews = async function () {
   }
   //2.2) Hash is only one element array, that means preview window should be displayed
   else if (id.length === 1) {
+    muscleView.renderSpinner(document.querySelector(".mscl-prev"));
     await model.loadMuscle(id[0]);
     muscleView.render(model.state.muscle);
 
@@ -28,7 +29,9 @@ const controlViews = async function () {
   //2.3) Hash is [muscle name]/ tierlist, that means user clicked on 'go to tier list' button, and such tierlist should be displayed
   else if (id.length === 2) {
     muscleView.hideView();
+
     await model.loadExercises(id);
+
     tierListView.render(model.state.exercises);
 
     tierListView.init();

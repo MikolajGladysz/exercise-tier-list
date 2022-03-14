@@ -18,7 +18,14 @@
   "isolation": "5",
   "progression": "4",
   "overview": "Lorum Ipsum 21900",
-  "variations": ["chin-up", "one-hand-chinup", "test2"],
+  "variations": [
+    "chin-up",
+    "one-hand-chinup",
+    "test2",
+    "test1",
+    "test3",
+    "pull-up"
+  ],
   "imgUrl": "u2rl",
   "id": "test1"
 }

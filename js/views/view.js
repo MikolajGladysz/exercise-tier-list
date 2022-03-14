@@ -19,14 +19,32 @@ export default class View {
     this._parentElement.innerHTML = "";
   }
 
-  renderSpinner() {
+  _triggerAccordion(e) {
+    const accordions = Array.from(
+      // document.querySelectorAll(".mscl-prev .accordion-content h3")
+      document.querySelectorAll(".accordion-content")
+    );
+    // //0)Check if click is inside any accordion. If so, toggle 'colapse' class to content and 'active' class to arrow
+    if (e.target.closest(".content-box")) {
+      e.target.closest(".content-box").classList.toggle("active");
+    }
+  }
+  renderSpinner(el) {
     const markup = `
-      <div class="spinner">
-        Loading...
-      </div>
+    <div class="loader">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square last"></div>
+    <div class="square clear"></div>
+    <div class="square"></div>
+    <div class="square last"></div>
+    <div class="square clear"></div>
+    <div class="square"></div>
+    <div class="square last"></div>
+  </div>
     `;
     this._clear();
-    this._parentElement.insertAdjacentHTML("afterbegin", markup);
+    el.insertAdjacentHTML("afterbegin", markup);
   }
   renderMessage(message = this._message, isError = false) {
     if (isError) message = this._errorMessage;

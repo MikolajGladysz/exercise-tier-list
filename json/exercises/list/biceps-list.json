@@ -1,1 +1,17 @@
-["pull-up", "chin-up", "test1", "test2", "test3"]
+[
+  "barbell-curl",
+  "barbell-row",
+  "cable-curl",
+  "chin-up",
+  "concentration-curl",
+  "deadlift",
+  "ez-bar-preacher-curl",
+  "facing-away-cable-curl",
+  "landmine-row",
+  "lat-pulldowns",
+  "one-hand-chin-up",
+  "pull-up",
+  "reverse-grip-barbell-curl",
+  "seated-barbell-curl",
+  "towel-pull-up"
+]

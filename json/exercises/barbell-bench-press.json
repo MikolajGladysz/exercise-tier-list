@@ -1,0 +1,24 @@
+{
+  "name": "Barbell Bench Press",
+  "muscles": {
+    "chest": {
+      "tier": "0",
+      "points": "8"
+    },
+    "triceps": {
+      "tier": "1",
+      "points": "3"
+    },
+    "shoulders": {
+      "tier": "1",
+      "points": "1"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "1",
+  "progression": "5",
+  "overview": "t's popular to hate on the bench press these days, but it's one of the most popular lifts in the gym for a reason. For one, the standard barbell bench allows you to move the most weight. It's also an easier lift to control than pressing with heavy dumbbells. ",
+  "variations": ["dumbbell-bench-press"],
+  "imgUrl": "../../img/modal/barbell-bench-press.gif",
+  "id": "barbell-bench-press"
+}

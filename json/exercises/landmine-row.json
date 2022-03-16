@@ -1,0 +1,48 @@
+{
+  "name": "Ladmine row",
+  "muscles": {
+    "oblique": {
+      "tier": "2",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "3",
+      "points": "4"
+    },
+    "lats": {
+      "tier": "0",
+      "points": "4"
+    },
+    "traps": {
+      "tier": "0",
+      "points": "4"
+    },
+    "biceps": {
+      "tier": "3",
+      "points": "4"
+    },
+    "quadriceps": {
+      "tier": "4",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "3",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "4"
+    },
+    "glutes": {
+      "tier": "2",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "1",
+  "progression": "5",
+  "overview": "The landmine row has a lot in common with the barbell row, except the angle of your pull is slightly different. The landmine row, with the barbell anchored behind you, lets you get more of a squeeze with your lats. And because it’s anchored, you cheat less and squeeze a little bit more.",
+  "variations": ["barbell-row"],
+  "imgUrl": "../../img/modal/landmine-row.gif",
+  "id": "landmine-row"
+}

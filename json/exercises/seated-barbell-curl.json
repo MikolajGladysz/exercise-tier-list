@@ -1,0 +1,24 @@
+{
+  "name": "Seated Barbell Curl",
+  "muscles": {
+    "biceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "3",
+      "points": "8"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "4",
+  "overview": "Barbell curl variation, where you exclude kipping by sitting. It helps you isolate biceps and focus on the movement.",
+  "variations": [
+    "ez-bar-preacher-curl",
+    "reverse-grip-barbell-curl",
+    "barbell-curl"
+  ],
+  "imgUrl": "../../img/modal/seated-barbell-curl.gif",
+  "id": "seated-barbell-curl"
+}

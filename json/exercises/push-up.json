@@ -1,0 +1,24 @@
+{
+  "name": "Push-up",
+  "muscles": {
+    "chest": {
+      "tier": "1",
+      "points": "8"
+    },
+    "triceps": {
+      "tier": "1",
+      "points": "3"
+    },
+    "shoulders": {
+      "tier": "1",
+      "points": "1"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "2",
+  "progression": "2",
+  "overview": "An obvious point in favor of push-ups is that they require no equipment and can be the centerpiece of a home chest workout,they're also highly versatile, easy to adjust for range of motion, and can help strategically target different parts of your chest with a few simple tweaks to elevation or hand placement.",
+  "variations": ["dip"],
+  "imgUrl": "../../img/modal/push-up.gif",
+  "id": "push-up"
+}

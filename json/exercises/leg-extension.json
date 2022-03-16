@@ -1,0 +1,16 @@
+{
+  "name": "Leg Extension",
+  "muscles": {
+    "quadriceps": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "5",
+  "overview": "Leg extensions are ideal if you want to focus on your quads. But if you'd like to improve overall leg strength, it's best to do alternatives. Leg extension alternatives engage more leg muscles, like the glutes and hamstrings. Some exercises even work your core, which is important for good posture and balance.",
+  "variations": ["squat"],
+  "imgUrl": "../../img/modal/leg-extension.gif",
+  "id": "leg-extension"
+}

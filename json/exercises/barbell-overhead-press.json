@@ -1,0 +1,20 @@
+{
+  "name": "Barbell Overhead Press",
+  "muscles": {
+    "shoulders": {
+      "tier": "0",
+      "points": "2"
+    },
+    "triceps": {
+      "tier": "2",
+      "points": "5"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "2",
+  "progression": "4",
+  "overview": "The barbell overhead press strengthens all three heads of the deltoid — the front (anterior), middle (lateral), and rear (posterior). If you want bigger, stronger, and boulder shoulders, overhead pressing variations are necessary for size and strength because shoulder raise variations will only take you so far.",
+  "variations": [],
+  "imgUrl": "../../img/modal/barbell-overhead-press.gif",
+  "id": "barbell-overhead-press"
+}

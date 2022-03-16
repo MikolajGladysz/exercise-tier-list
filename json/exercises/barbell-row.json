@@ -1,0 +1,48 @@
+{
+  "name": "Barbell Row",
+  "muscles": {
+    "oblique": {
+      "tier": "2",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "3",
+      "points": "4"
+    },
+    "lats": {
+      "tier": "0",
+      "points": "4"
+    },
+    "traps": {
+      "tier": "0",
+      "points": "4"
+    },
+    "biceps": {
+      "tier": "3",
+      "points": "4"
+    },
+    "quadriceps": {
+      "tier": "4",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "3",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "4"
+    },
+    "glutes": {
+      "tier": "2",
+      "points": "4"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "1",
+  "progression": "5",
+  "overview": "The great thing about the barbell row is, due to required stability in the spine and core muscles (keeping a neutral spine) and isometric stringstring activity (hinging the hips in a bent position), the action becomes a global pull exercise.",
+  "variations": ["landmine-row"],
+  "imgUrl": "../../img/modal/barbell-row.gif",
+  "id": "barbell-row"
+}

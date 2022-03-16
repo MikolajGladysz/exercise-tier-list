@@ -1,0 +1,20 @@
+{
+  "name": "Crunch",
+  "muscles": {
+    "oblique": {
+      "tier": "2",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "4",
+  "progression": "2",
+  "overview": "The crunch is a classic core exercise. It specifically trains your abdominal muscles, which are part of your core. Your core consists not only of your abs. It also includes your oblique muscles on the sides of your trunk, as well as the muscles in your pelvis, lower back, and hips.",
+  "variations": ["bicycle-crunch"],
+  "imgUrl": "../../img/modal/crunch.gif",
+  "id": "crunch"
+}

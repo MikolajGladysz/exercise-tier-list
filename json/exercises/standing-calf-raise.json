@@ -1,0 +1,16 @@
+{
+  "name": "Standing Calf Rise",
+  "muscles": {
+    "calves": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "5",
+  "overview": "Standing calf raises are probably the most common calf exercise and can be one of the most ineffective, too. Performing calf raises from the floor prevents your muscle from moving through its full range of motion, Chan says.",
+  "variations": ["seated-calf-raise"],
+  "imgUrl": "../../img/modal/standing-calf-raise.gif",
+  "id": "standing-calf-raise"
+}

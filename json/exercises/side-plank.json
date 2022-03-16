@@ -1,0 +1,20 @@
+{
+  "name": "Side Plank",
+  "muscles": {
+    "oblique": {
+      "tier": "1",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "3",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "2",
+  "progression": "1",
+  "overview": "The side plank is a great exercise for strengthening the oblique abdominal muscles, which don't get worked as much during ab exercises such as crunches. You will hold your body on your side in a straight position supported only by one arm and the side of one foot.",
+  "variations": ["plank"],
+  "imgUrl": "../../img/modal/side-plank.jpg",
+  "id": "side-plank"
+}

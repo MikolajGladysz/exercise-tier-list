@@ -1,0 +1,24 @@
+{
+  "name": "Leg Press",
+  "muscles": {
+    "glutes": {
+      "tier": "1",
+      "points": "9"
+    },
+    "quadriceps": {
+      "tier": "0",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "1",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "4",
+  "progression": "5",
+  "overview": "A leg press is an isolation exercise that targets muscle groups throughout your lower body, including your quadriceps, hamstrings, and glutes. Practice leg presses by sitting against the backrest of a leg press machine. Place your feet against the footplate with your knees bent at a 90-degree angle.",
+  "variations": ["squat"],
+  "imgUrl": "../../img/modal/leg-press.gif",
+  "id": "leg-press"
+}

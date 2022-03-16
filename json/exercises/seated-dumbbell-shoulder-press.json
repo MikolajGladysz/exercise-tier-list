@@ -1,0 +1,20 @@
+{
+  "name": "Seated Dumbbell Shoulder Press",
+  "muscles": {
+    "shoulders": {
+      "tier": "0",
+      "points": "7"
+    },
+    "triceps": {
+      "tier": "1",
+      "points": "5"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "3",
+  "progression": "4",
+  "overview": "You often perform the dumbbell shoulder press while standing. But performing this move seated allows you to drive more action to your shoulder. With your back and lower body stabilized through sitting, you can customize the angle (wide for more shoulder action or narrow for more anterior deltoid and triceps involvement).",
+  "variations": [],
+  "imgUrl": "../../img/modal/half-kneeling-landmine-press.gif",
+  "id": "seated-dumbbell-shoulder-press"
+}

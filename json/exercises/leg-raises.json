@@ -1,0 +1,20 @@
+{
+  "name": "Side Leg Raises",
+  "muscles": {
+    "oblique": {
+      "tier": "1",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "3",
+  "progression": "1",
+  "overview": " The hanging knee raise is an efficient and effective core exercise that increases functional strength, muscular development, and control in your abdominal muscles. This exercise is great for improving grip strength since you're hanging by your own grip throughout each set.",
+  "variations": ["side-leg-rises"],
+  "imgUrl": "../../img/modal/leg-raise.gif",
+  "id": "leg-raises"
+}

@@ -92,7 +92,7 @@ class MuscleView extends View {
             }</h2>
             
             <div class="accordion">
-              <div class="content-box">
+              <div class="content-box active">
                 <div class="label"> Muscle Structure</div>
                 <div class="content">
                   <span>${this._data.structure}</span>
@@ -126,6 +126,7 @@ class MuscleView extends View {
       //handle clicking on 'go to tierlist" button
       const btn = this._parentElement.querySelector(".tierlist-btn");
       btn.addEventListener("click", () => {
+        console.log(this._data.name.toLowerCase().trim() + "/tierlist");
         window.location.hash = this._data.name.toLowerCase() + "/tierlist";
       });
     }

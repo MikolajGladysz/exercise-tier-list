@@ -1,0 +1,48 @@
+{
+  "name": "Deadlift",
+  "muscles": {
+    "oblique": {
+      "tier": "2",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "2",
+      "points": "4"
+    },
+    "lats": {
+      "tier": "1",
+      "points": "4"
+    },
+    "traps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "biceps": {
+      "tier": "4",
+      "points": "4"
+    },
+    "quadriceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "1",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "2",
+      "points": "4"
+    },
+    "glutes": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "1",
+  "progression": "5",
+  "overview": "Weightlifting in its purest form is lifting something up and putting it back down. That’s the deadlift in a nutshell. It’s simplicity personified and one of the best muscle-growing, strength-building, health-improving moves around.",
+  "variations": [],
+  "imgUrl": "../../img/modal/deadlift.gif",
+  "id": "deadlift"
+}

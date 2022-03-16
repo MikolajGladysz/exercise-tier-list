@@ -1,0 +1,20 @@
+{
+  "name": "Kirk Shrug",
+  "muscles": {
+    "traps": {
+      "tier": "5",
+      "points": "1"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "3"
+    }
+  },
+  "difficulty": "5",
+  "isolation": "2",
+  "progression": "3",
+  "overview": "Kirk Karwoski started doing this shrug variation to increase grip strength for the deadlift. His coach, Marty Gallagher, thought this exercise would help him pull heavier — and Marty was right. Kirk pulled an 800-pound deadlift with the help of the Kirk Shrug. But they also discovered they built a bigger yoke too. By using a thumbless grip and a pause, this lift puts incredible tension on your upper traps which can cause serious injuy.",
+  "variations": ["trap-bar-shrug"],
+  "imgUrl": "",
+  "id": "kirk-shrug"
+}

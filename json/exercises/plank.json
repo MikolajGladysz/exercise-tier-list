@@ -1,0 +1,20 @@
+{
+  "name": "Plank",
+  "muscles": {
+    "oblique": {
+      "tier": "2",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "1",
+      "points": "4"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "2",
+  "progression": "1",
+  "overview": "The plank is a classic exercise that strengthens your body from head to toe. In particular, the plank helps strengthen your core muscles, including your abdominals and lower back. Having a strong core is linked to reduced lower back pain, an improved ability to perform daily tasks, and enhanced athletic performance.",
+  "variations": ["side-plank"],
+  "imgUrl": "../../img/modal/plank.jpg",
+  "id": "plank"
+}

@@ -621,10 +621,11 @@ h1 {
   background-color: var(--e-tier);
 }
 .item-img {
-  height: 80%;
+  height: 55%;
 }
 .tier-item {
   text-align: center;
+  cursor: pointer;
 }
 .item-title {
   font-size: 1rem;

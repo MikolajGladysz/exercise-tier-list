@@ -3,22 +3,31 @@
   "muscles": {
     "lats": {
       "tier": "0",
-      "points": "8"
+      "points": "9"
     },
     "biceps": {
-      "tier": "1",
+      "tier": "2",
       "points": "3"
     },
     "abs": {
       "tier": "3",
       "points": "3"
+    },
+    "forearms": {
+      "tier": "2",
+      "points": "1"
     }
   },
   "difficulty": "3",
   "isolation": "3",
   "progression": "3",
-  "overview": "Lorum Ipsum 1900",
-  "variations": ["chin-up", "one-hand-chinup"],
-  "imgUrl": "url",
+  "overview": "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands and pulls up. As this happens, the elbows flex and the shoulders adduct and extend to bring the elbows to the torso.",
+  "variations": [
+    "chin-up",
+    "one-hand-chinup",
+    "lat-pulldowns",
+    "towel-pull-up"
+  ],
+  "imgUrl": "../../img/modal/pull-up.gif",
   "id": "pull-up"
 }

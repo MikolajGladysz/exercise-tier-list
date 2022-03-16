@@ -1,0 +1,16 @@
+{
+  "name": "Cable Shrug",
+  "muscles": {
+    "traps": {
+      "tier": "2",
+      "points": "3"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "4",
+  "progression": "5",
+  "overview": "The cable shrug is an excellent exercise to target the traps, rear delts, and upper back. The cable stack allows for precise loading, which is beneficial for higher rep sets and methods such as drop sets, tempo, and pauses. Unlike some of the other exercises on this list, the cable’s constant tension ensures that you fully fatigue the traps throughout their entire range of motion.",
+  "variations": ["trap-bar-shrug"],
+  "imgUrl": "../../img/modal/cable-shrug.gif",
+  "id": "cable-shrug"
+}

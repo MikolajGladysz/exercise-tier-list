@@ -1,0 +1,32 @@
+{
+  "name": "Squat",
+  "muscles": {
+    "oblique": {
+      "tier": "2",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "3",
+      "points": "4"
+    },
+    "glutes": {
+      "tier": "1",
+      "points": "4"
+    },
+    "quadriceps": {
+      "tier": "0",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "1",
+  "progression": "5",
+  "overview": "Squat is a compound exercise that challenges every muscle in the legs, especially the glutes. Its primary use in training is to challenge hip extension, driving the lower body up from the bottom position and placing a high amount of tension on the glutes. The back squat leads to strength and muscle gain and reinforces other exercises like the deadlift, split squat, and lunge.",
+  "variations": ["leg-press"],
+  "imgUrl": "../../img/modal/squat.gif",
+  "id": "squat"
+}

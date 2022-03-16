@@ -1,0 +1,24 @@
+{
+  "name": "Dumbbell Bench Press",
+  "muscles": {
+    "chest": {
+      "tier": "0",
+      "points": "8"
+    },
+    "triceps": {
+      "tier": "1",
+      "points": "3"
+    },
+    "shoulders": {
+      "tier": "1",
+      "points": "1"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "2",
+  "progression": "5",
+  "overview": "Whether dumbbell or barbell presses are better for growth is an age-old weight-room debate. Luckily, you can do both! But there's little doubt that the dumbbell variation has more versatility throughout the beginning, middle, and end of a chest workout.",
+  "variations": ["barbell-bench-press"],
+  "imgUrl": "../../img/modal/dumbbell-bench-press.gif",
+  "id": "dumbbell-bench-press"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Hip thrust",
+  "muscles": {
+    "glutes": {
+      "tier": "0",
+      "points": "9"
+    },
+    "quadriceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "1",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "4",
+  "progression": "5",
+  "overview": "Hip thrusts build strength and size in your glutes in a way many other exercises cannot, and experts agree that they provide benefits for many people, from athletes to older adults over age 65. Glute strength is important for the stabilization of your core, pelvis and lower body.",
+  "variations": ["glute-bridge"],
+  "imgUrl": "../../img/modal/hip-thrust.gif",
+  "id": "hip-thrust"
+}

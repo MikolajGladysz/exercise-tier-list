@@ -1,0 +1,28 @@
+{
+  "name": "One Hand Chin Up",
+  "muscles": {
+    "lats": {
+      "tier": "4",
+      "points": "2"
+    },
+    "biceps": {
+      "tier": "4",
+      "points": "3"
+    },
+    "abs": {
+      "tier": "5",
+      "points": "3"
+    },
+    "forearms": {
+      "tier": "5",
+      "points": "1"
+    }
+  },
+  "difficulty": "5",
+  "isolation": "1",
+  "progression": "2",
+  "overview": "One-arm pull-ups (OAP) are an advanced bodyweight exercise designed to build upper-body strength, engage core muscles, and improve grip strength.",
+  "variations": ["chin-up", "pull-up"],
+  "imgUrl": "../../img/modal/one-hand-chin-up.gif",
+  "id": "one-hand-chin-up"
+}

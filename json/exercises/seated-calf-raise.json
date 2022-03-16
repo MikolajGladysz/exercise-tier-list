@@ -1,0 +1,16 @@
+{
+  "name": "Seated Calf Rise",
+  "muscles": {
+    "calves": {
+      "tier": "1",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "5",
+  "overview": "Performing seated calf raises only works the soleus muscle (which sits underneath the gastrocnemius muscle). However, this is a good option for people who find it difficult to stay balanced when standing.",
+  "variations": ["standing-calf-raise"],
+  "imgUrl": "../../img/modal/seated-calf-raise.gif",
+  "id": "seated-calf-raise"
+}

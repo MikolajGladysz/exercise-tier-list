@@ -1,0 +1,16 @@
+{
+  "name": "Dumbbell Shrug",
+  "muscles": {
+    "traps": {
+      "tier": "0",
+      "points": "3"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "3",
+  "progression": "4",
+  "overview": "The dumbbell shrug allows for unilateral trap training and helps to iron out potential imbalances. While it is more difficult to load up serious weight with the dumbbell shrug, you can use methods to increase tension such as performing drop sets, lifting with tempo, or adding pauses. Plus, unlike the trap bar or barbell, dumbbells are particularly effective at improving grip strength.",
+  "variations": ["trap-bar-shrug"],
+  "imgUrl": "../../img/modal/dumbbell-shrug.gif",
+  "id": "dumbbell-shrug"
+}

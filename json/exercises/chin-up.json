@@ -1,24 +1,25 @@
 {
-  "name": "OverhandXSDDDDDDDDDDDDDDD pull up",
+  "name": "Chin Up",
   "muscles": {
     "lats": {
       "tier": "0",
       "points": "8"
     },
     "biceps": {
-      "tier": "2",
-      "points": "8"
+      "tier": "1",
+      "points": "1"
     },
     "abs": {
       "tier": "3",
-      "points": "3"
+      "points": "1"
     }
   },
-  "difficulty": "3",
-  "isolation": "4",
-  "progression": "1",
-  "overview": "Lorum Ipsum 21900",
-  "variations": ["pull-up", "one-hand-chinup"],
-  "imgUrl": "u2rl",
+  "difficulty": "4",
+  "isolation": "2",
+  "progression": "2",
+  "overview": "The chin-up is a bodyweight exercise that can induce serious muscle growth of the biceps (and back) with nothing but a pull-up bar. If you have a door-mounted pull-up bar in your home gym, then that’s all you need to bang out sets of chin-ups. Since the lifter pulls their own bodyweight, the biceps are usually exposed to loads heavier than one can lift with a barbell. However, lifters may often perform these incorrectly, engaging their shoulder and grip muscles.",
+  "variations": ["pull-up", "one-hand-chinup", "lat-pulldowns"],
+  "imgUrl": "../../img/modal/chin-up.gif",
+
   "id": "chin-up"
 }

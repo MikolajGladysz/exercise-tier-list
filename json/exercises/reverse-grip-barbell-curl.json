@@ -1,0 +1,20 @@
+{
+  "name": "Reverse-grip Barbell Curl",
+  "muscles": {
+    "biceps": {
+      "tier": "2",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "1",
+      "points": "8"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "3",
+  "progression": "4",
+  "overview": "The reverse-grip barbell curl is a variation on the biceps curl where the palms face downward. The switch from an underhand to an overhand grip brings the forearm and brachialis muscles more into the exercise. If it is uncomfortable to the wrists, try performing it on the angles of an EZ-curl bar.",
+  "variations": ["ez-bar-preacher-curl", "seated-barbell-curl", "barbell-curl"],
+  "imgUrl": "../../img/modal/reverse-grip-barbell-curl.gif",
+  "id": "reverse-grip-barbell-curl"
+}

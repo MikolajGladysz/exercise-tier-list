@@ -1,0 +1,20 @@
+{
+  "name": "Glute-Ham Raises",
+  "muscles": {
+    "glutes": {
+      "tier": "1",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "3",
+  "overview": "are usually done on a machine, but you can reap the same strengthening benefits by pairing up with a partner who’s willing to hold your sweaty ankles. If your workout buddy is otherwise preoccupied, don’t fret. You can also do this exercise alone by wedging your toes firmly under a couch or coffee table. Have a heavy barbell lying around? You can tuck your ankles behind that, too.",
+  "variations": [],
+  "imgUrl": "../../img/modal/glute-ham-raises.gif",
+  "id": "glute-ham-raises"
+}

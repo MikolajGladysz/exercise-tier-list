@@ -1,0 +1,24 @@
+{
+  "name": "Dip",
+  "muscles": {
+    "chest": {
+      "tier": "0",
+      "points": "8"
+    },
+    "triceps": {
+      "tier": "0",
+      "points": "3"
+    },
+    "shoulders": {
+      "tier": "2",
+      "points": "1"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "3",
+  "progression": "2",
+  "overview": "Dips were a staple in the training programs of the golden-age greats for good reason: Nothing stretches the chest and makes it work quite like this bodyweight movement. You can add extra weight with a dip belt if you're seriously strong, or use band or machine assistance if you struggle with bodyweight reps. Plus, they are a great spotter-free alternative to the decline press.",
+  "variations": ["push-up"],
+  "imgUrl": "../../img/modal/dip.gif",
+  "id": "dip"
+}

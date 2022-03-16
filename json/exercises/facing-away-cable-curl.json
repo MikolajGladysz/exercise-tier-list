@@ -1,0 +1,20 @@
+{
+  "name": "Facing-Away Cable Curl",
+  "muscles": {
+    "biceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "8"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "4",
+  "overview": "Using cables allows you the same benefits of the incline dumbbell curl — a greater stretch due to a longer range of motion — coupled with the unique resistance of the cables, which keeps tension on the muscle throughout the entire movement.",
+  "variations": ["cable-curl"],
+  "imgUrl": "../../img/modal/facing-away-cable-curl.gif",
+  "id": "facing-away-cable-curl"
+}

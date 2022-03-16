@@ -1,0 +1,32 @@
+{
+  "name": "Lat Pulldowns",
+  "muscles": {
+    "oblique": {
+      "tier": "3",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "4",
+      "points": "4"
+    },
+    "lats": {
+      "tier": "0",
+      "points": "4"
+    },
+    "biceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "3",
+  "progression": "5",
+  "overview": "The lat pulldown is a cousin of pullups and chinups, and it definitely seems similar. But we’re giving it its own spot here because of how it lets you focus in on your lats. Freed of grip concerns and the need to manage your lower body perfectly, you can really focus in on your lats and finish off every rep with a good squeeze.",
+  "variations": ["pull-up", "chin-up"],
+  "imgUrl": "../../img/modal/lat-pulldowns.gif",
+  "id": "lat-pulldowns"
+}

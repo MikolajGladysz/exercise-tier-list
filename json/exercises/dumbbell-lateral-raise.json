@@ -1,0 +1,16 @@
+{
+  "name": "Dumbbell Lateral Raise",
+  "muscles": {
+    "shoulders": {
+      "tier": "0",
+      "points": "6"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "5",
+  "progression": "4",
+  "overview": "For isolation exercises like the lateral raise, creating and maintaining tension is paramount. To do this properly, avoid using heavy weights. That doesn’t mean more weight is always a bad thing — but don’t slap on more pounds at the cost of losing tension. And nothing maintains tension like adding a pause in the contracted position.",
+  "variations": ["leaning-lateral-raise"],
+  "imgUrl": "../../img/modal/dumbbell-lateral-raise.gif",
+  "id": "dumbbell-lateral-raise"
+}

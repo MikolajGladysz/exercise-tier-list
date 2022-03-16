@@ -1,0 +1,16 @@
+{
+  "name": "Machine Fly",
+  "muscles": {
+    "chest": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "5",
+  "overview": " For the majority of lifters, the machine chest fly (aka, pec-deck) is a more effective, harder-to-screw-up alternative to dumbbell flyes. If your gym has one, it's a great move to get a great pump without having to balance any weights or put your shoulders at risk.",
+  "variations": ["chest-fly"],
+  "imgUrl": "../../img/modal/machine-fly.gif",
+  "id": "machine-fly"
+}

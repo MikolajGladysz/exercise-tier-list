@@ -1,0 +1,20 @@
+{
+  "name": "Concentration Curl",
+  "muscles": {
+    "biceps": {
+      "tier": "5",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "8"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "3",
+  "progression": "2",
+  "overview": "The concentration curl is all about feeling your biceps work. You sit down on a bench, rest your elbow on the inside of your thigh, and curl a dumbbell from full extension to contraction. Lack of stabilisation makes this movement less effective in hypertrophy training.",
+  "variations": [],
+  "imgUrl": "../../img/modal/concentration-curl.gif",
+  "id": "concentration-curl"
+}

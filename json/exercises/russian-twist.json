@@ -1,0 +1,20 @@
+{
+  "name": "Russian Twist",
+  "muscles": {
+    "oblique": {
+      "tier": "0",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "2",
+      "points": "4"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "3",
+  "progression": "3",
+  "overview": "Russian twists strengthen your core, obliques, and spine. It's a total core exercise that also works your balance, builds stability in your spine, and trims your mid-section all at once",
+  "variations": [],
+  "imgUrl": "../../img/modal/russian-twist.gif",
+  "id": "russian-twist"
+}

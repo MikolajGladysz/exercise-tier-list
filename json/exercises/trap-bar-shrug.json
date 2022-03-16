@@ -1,0 +1,20 @@
+{
+  "name": "Trap Bar Shrug",
+  "muscles": {
+    "forearms": {
+      "tier": "2",
+      "points": "8"
+    },
+    "traps": {
+      "tier": "1",
+      "points": "3"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "3",
+  "progression": "5",
+  "overview": "Trap bar shrugs are a great way to overload the traps because you can use heavy loads safely. The trap bar has you assume a grip that helps minimize the stress on the anterior shoulder, elbows, and wrists. The trap bar shrug can also be programmed for strength, hypertrophy, or power development, making it a versatile training tool. ",
+  "variations": ["cable-shrug"],
+  "imgUrl": "../../img/modal/trap-bar-shrug.gif",
+  "id": "trap-bar-shrug"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Glute Bridge",
+  "muscles": {
+    "glutes": {
+      "tier": "0",
+      "points": "9"
+    },
+    "quadriceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "hamstring": {
+      "tier": "1",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "4",
+  "progression": "5",
+  "overview": "This exercise is very effective at loading the glutes in their shortened position, without the need to load the spine. What separates the glute bridge from the hip thrust is the range of motion. The glute bridge utilizes a shorter range of motion, allowing for more bias and muscular tension to be placed on the glutes over other muscles of the posterior chain such as the hamstrings, quads, and spinal erectors.",
+  "variations": ["hip-thrust"],
+  "imgUrl": "../../img/modal/glute-bridge.gif",
+  "id": "glute-bridge"
+}

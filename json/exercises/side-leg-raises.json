@@ -1,0 +1,20 @@
+{
+  "name": "Side Leg Raises",
+  "muscles": {
+    "oblique": {
+      "tier": "0",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "1",
+      "points": "4"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "3",
+  "progression": "1",
+  "overview": "With proper form, side leg raises build strength in the hip abductor muscles responsible for pushing your leg away from your body—especially the gluteus minimus and gluteus medius muscles.",
+  "variations": ["leg-raises"],
+  "imgUrl": "../../img/modal/leg-raise.gif",
+  "id": "side-leg-raises"
+}

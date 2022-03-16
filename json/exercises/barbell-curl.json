@@ -1,0 +1,24 @@
+{
+  "name": "Barbell Curl",
+  "muscles": {
+    "forearms": {
+      "tier": "4",
+      "points": "8"
+    },
+    "biceps": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "4",
+  "progression": "4",
+  "overview": "The barbell curl is a classic biceps-builder. This exercise targets the biceps and can add serious size and strength to the entire muscle when done correctly. You can curl more weight with the barbell curl than other curl variations as you’re lifting a singular implement with both hands. It’s also straightforward to do. Simply load up a barbell, hold it in both hands, and lift it towards your chin. Rinse and repeat.",
+  "variations": [
+    "ez-bar-preacher-curl",
+    "seated-barbell-curl",
+    "reverse-grip-barbell-curl"
+  ],
+  "imgUrl": "../../img/modal/barbell-curl.gif",
+  "id": "barbell-curl"
+}

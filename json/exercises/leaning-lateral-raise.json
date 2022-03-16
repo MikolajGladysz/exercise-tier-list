@@ -1,0 +1,16 @@
+{
+  "name": "Leaning Lateral Raise",
+  "muscles": {
+    "shoulders": {
+      "tier": "0",
+      "points": "7"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "5",
+  "progression": "5",
+  "overview": "Performing lateral raises while leaning increases the distance that your arm needs to travel to lift the weight — and a longer range of motion means more tension, leading to more gains. The leaning lateral raise places greater overload at the top of the rep than the standing version.",
+  "variations": ["dumbbell-lateral-raise"],
+  "imgUrl": "../../img/modal/leaning-lateral-raise.gif",
+  "id": "leaning-lateral-raise"
+}

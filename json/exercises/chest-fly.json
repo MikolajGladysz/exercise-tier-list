@@ -1,0 +1,16 @@
+{
+  "name": "Chest Fly",
+  "muscles": {
+    "chest": {
+      "tier": "0",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "5",
+  "progression": "4",
+  "overview": "Looking for a way to isolate the pecs after your presses? It's time to fly. And when it comes to fly variations, you can't beat cables. They allow for continuous tension throughout the exercise's full range of motion, which is why they're a no-brainer on the list of 10 Best Muscle-Building Isolation Exercises.",
+  "variations": ["machine-fly"],
+  "imgUrl": "../../img/modal/chest-fly.gif",
+  "id": "chest-fly"
+}

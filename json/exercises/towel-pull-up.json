@@ -1,0 +1,28 @@
+{
+  "name": "Towel Pull-Up",
+  "muscles": {
+    "lats": {
+      "tier": "4",
+      "points": "9"
+    },
+    "biceps": {
+      "tier": "5",
+      "points": "3"
+    },
+    "abs": {
+      "tier": "4",
+      "points": "3"
+    },
+    "forearms": {
+      "tier": "0",
+      "points": "1"
+    }
+  },
+  "difficulty": "4",
+  "isolation": "2",
+  "progression": "2",
+  "overview": "When regular pull-ups become easier, the simple act of adding a towel will make this exercise tougher because it’s harder to grip a towel than a bar. This version focuses on the forearms because of the neutral grip and the difficulty of holding and pulling up on the towel, which builds forearm strength and size while strengthening your back and biceps.",
+  "variations": ["pull-up"],
+  "imgUrl": "../../img/modal/pull-up.gif",
+  "id": "towel-pull-up"
+}

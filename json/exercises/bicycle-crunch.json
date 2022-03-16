@@ -1,0 +1,20 @@
+{
+  "name": "Bicycle Crunch",
+  "muscles": {
+    "oblique": {
+      "tier": "1",
+      "points": "8"
+    },
+    "abs": {
+      "tier": "3",
+      "points": "4"
+    }
+  },
+  "difficulty": "2",
+  "isolation": "2",
+  "progression": "1",
+  "overview": "The bicycle crunch is an effective ab exercise, reaching not only the usual abs but also the deep abs and the obliques. If you want to work your core, this air bicycle maneuver is a great choice.",
+  "variations": [],
+  "imgUrl": "../../img/modal/bicycle-crunch.gif",
+  "id": "bicycle-crunch"
+}

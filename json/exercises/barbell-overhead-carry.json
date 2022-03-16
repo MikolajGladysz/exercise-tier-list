@@ -1,0 +1,32 @@
+{
+  "name": "Barbell Overhead Carry",
+  "muscles": {
+    "traps": {
+      "tier": "2",
+      "points": "3"
+    },
+    "triceps": {
+      "tier": "3",
+      "points": "3"
+    },
+    "shoulders": {
+      "tier": "4",
+      "points": "3"
+    },
+    "abs": {
+      "tier": "4",
+      "points": "3"
+    },
+    "oblique": {
+      "tier": "2",
+      "points": "3"
+    }
+  },
+  "difficulty": "5",
+  "isolation": "1",
+  "progression": "2",
+  "overview": "There are many variations of the overhead carry, but the standard-grip version allows for the heaviest load — and thus the highest stimulation. This exercise seriously challenges your upper traps, shoulders, core, and triceps isometrically, while also being a great accessory move to improve your overhead strength for presses and Olympic lifts.",
+  "variations": ["farmers-carry"],
+  "imgUrl": "../../img/modal/barbell-overhead-carry.gif",
+  "id": "barbell-overhead-carry"
+}

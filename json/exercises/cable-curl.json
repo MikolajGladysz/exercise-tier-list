@@ -1,0 +1,20 @@
+{
+  "name": "Cable curl",
+  "muscles": {
+    "biceps": {
+      "tier": "1",
+      "points": "4"
+    },
+    "forearms": {
+      "tier": "4",
+      "points": "8"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "4",
+  "overview": "When you curl a dumbbell or barbell, the movement is hardest at the midpoint of the lift since the weight is furthest from the body. However, cables keep tension on the muscle throughout the movement, as the weight stack you’re lifting is suspended throughout. This adds more tension to the muscle for more growth. You can also attach different handles to a cable machine‘s pulley to attack your biceps from different angles.",
+  "variations": ["facing-away-cable-curl"],
+  "imgUrl": "../../img/modal/cable-curl.gif",
+  "id": "cable-curl"
+}

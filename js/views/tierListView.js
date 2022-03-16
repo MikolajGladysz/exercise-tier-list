@@ -73,7 +73,7 @@ class TierListView extends View {
     variations.forEach((e) => {
       variationMarkup += this._generateItemMarkup(e);
     });
-
+    console.log(variationMarkup ? variationMarkup : "nie");
     const tierLetter = ["s", "a", "b", "c", "d", "e"][item.tier];
 
     const markup = `<section class="modal-con" style="border-top: 8px solid var(--${tierLetter}-tier);">
@@ -81,8 +81,8 @@ class TierListView extends View {
     <h2 class="modal-title">${item.name}</h2>
     <div class="flexBlock">
       <img
-        src="./img/modal/biceps/biceps_curl.gif"
-        alt="biceps curl gif"
+        src="${item.imgUrl}"
+        alt="${item.name} gif"
         class="modal-img"
       />
       <section class="modal-content">
@@ -95,15 +95,20 @@ class TierListView extends View {
           </span>
             </div>
           </div>
-          <div class="content-box">
+          ${
+            variationMarkup
+              ? `<div class="content-box">
             <div class="label"> Variation</div>
             <div class="content">
             <div class="modal-variation flexBlock">
             ${variationMarkup}
             </div>
             </div>
-          </div>
-          <div class="content-box">
+          </div>`
+              : ""
+          }
+          
+          <div class="content-box active">
             <div class="label"> Exercise Statistics</div>
             <div class="content">
             <div class="modal-stats flexBlock">

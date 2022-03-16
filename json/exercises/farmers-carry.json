@@ -1,0 +1,36 @@
+{
+  "name": "Farmers Carry",
+  "muscles": {
+    "traps": {
+      "tier": "2",
+      "points": "3"
+    },
+    "triceps": {
+      "tier": "3",
+      "points": "3"
+    },
+    "shoulders": {
+      "tier": "4",
+      "points": "3"
+    },
+    "abs": {
+      "tier": "3",
+      "points": "3"
+    },
+    "oblique": {
+      "tier": "2",
+      "points": "3"
+    },
+    "calves": {
+      "tier": "1",
+      "points": "3"
+    }
+  },
+  "difficulty": "3",
+  "isolation": "1",
+  "progression": "3",
+  "overview": "The farmer’s carry is a loaded carry variation that can benefit muscles across the upper body and lower body all at once. The traps play a vital role in stabilizing the scapula as it is the main muscle producing tension and stability in the upper back during any form of carry. The farmer’s carry also helps with core strength and postural control, making it highly transferable to everyday life.",
+  "variations": ["barbell-overhead-carry"],
+  "imgUrl": "../../img/modal/farmers-carry.gif",
+  "id": "farmers-carry"
+}

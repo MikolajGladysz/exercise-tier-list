@@ -1,0 +1,24 @@
+{
+  "name": "Ez Bar Pracher Curl",
+  "muscles": {
+    "forearms": {
+      "tier": "2",
+      "points": "3"
+    },
+    "biceps": {
+      "tier": "0",
+      "points": "8"
+    }
+  },
+  "difficulty": "1",
+  "isolation": "5",
+  "progression": "5",
+  "overview": "The EZ bar preacher curl is a great exercise to isolate the biceps, while minimizing the strain on your wrists. ",
+  "variations": [
+    "seated-barbell-curl",
+    "reverse-grip-barbell-curl",
+    "barbell-curl"
+  ],
+  "imgUrl": "../../img/modal/ez-bar-preacher-curl.gif",
+  "id": "ez-bar-preacher-curl"
+}

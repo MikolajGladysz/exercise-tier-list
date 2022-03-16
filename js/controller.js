@@ -5,7 +5,8 @@ import tierListView from "./views/tierListView.js";
 
 const controlViews = async function () {
   // 0) getting id from hash. Id is an array with first part, that is muscle name and other, that is tierlist
-  const id = window.location.hash.slice(1).split("/");
+  window.location.hash = window.location.hash.replace("%20", "");
+  const id = window.location.hash.slice(1).trim().split("/");
 
   //1)reseting view
   tierListView.hideView();
